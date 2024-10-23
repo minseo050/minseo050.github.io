@@ -3,45 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>festival</title>
+    <title>Document</title>
     <style>
-        body {
-            font-family: '맑은고딕';
+        h1 {
+            color: #4e2c00;}
+
+        h3 {
+            padding-left: 10px;
+            color: #926f40;
         }
-        h2 {
-            font-family: '맑은고딕';
-            color: rgb(0, 127, 131);
-        }
-        p {
+       
+        p{
+            width: 1420px;
+            border: solid 1px rgb(199, 193, 112);
+            padding: 20px;
             font-size: 14px;
-            line-height: 150%;
-        
+            margin-right: 126px;
+            color: #926f40;
         }
-        span {
+        li{
+            list-style-type: circle;
+        }
+        span{
             font-weight: bold;
-            color: rgb(12, 112, 99)
         }
+        .menu {
+            float:right;
+            /* 왼쪽으로 띄움 그다음 내용들은 옆에다가 띄워짐 */
+            width:10;
+            text-align:center;
+        }
+        .menu a {
+            background-color: #412a0d;
+            padding: 10px;
+            margin-right: 15px;
+            display: block;
+            color: rgb(145, 120, 204);
+            text-decoration: none;
+        }
+        a:link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #ebbe45;
+            /* 한 번 링크 갔따옴 */
+        }
+        a:hover {
+            color: #8ccbff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #00ffff;
+            /*누르고 있을 때, 위 순서는 바뀌면 안돼*/
+        }
+        .main {
+            float: left;
+            width: 60%;
+            padding:0 20px;
+        }
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:620px) {
+            /* For modile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+        #div0{
+        overflow: auto;
+        /* 내용이 넘쳤을 떄 해결 */
+    }
+    #div1{
+        background-color: #e5e5e5;
+        padding: 15px;
+        text-align: center;
+    }
+    #div2{
+        background-color: #e5e5e5;
+        padding: 10px;
+        text-align: center;
+        margin-top: 7px;
+    }
+    
     </style>
 </head>
 <body bgcolor="#faf9e8">
-    <center>
-    <h2>「수원화성 화락(和樂)」</h2>
-    <p> 수원화성 화락은 '정조대왕'이 개혁신도시 수원화성에서 <span>꿈꾸었던 여민동락의
-        세상</span>을 현재의 <span>다채로운 '빛'으로 연출한 미디어아트</span>입니다.
-    </p>
-    <p><span>장소</span> : 수원화성 화서문, 장안문, 장안공원 </p>
-    <p><span>일시</span> : 2024.9.28(토)~ 10.20(일)</p>
-    <img src='./f2.jpg' width='600' height='400'>
-    <p><span>찾아오시는 길</span></p>
-    <img src='./f3.png' width='600' height='400'>
-   <p><span>주소</span>: 경기도 수원시 장안구 영화동 320-2</p>
+    <div id="div0">
+        <div class="menu">
+            <a href="introduction.html">Introduction</a> 
+            <a href="artist.html">Artist</a>
+            <a href="teaser.html">Teaser</a>
+            <a href="steady.html">Steady</a> 
+            <a href="version.html">version</a>           
+      </div> 
 
-   <h3><a href='6-3q.html'>열대어란?</a></h3>
-   <h3><a href='6-1.html'>잠자리란?</a></h3>
-   <h3><a href='6-2.html'>베낭여행이란?</a></h3>
-   <h3><a href='6-3.html'>쇼핑뉴스</a></h3>
-   <h3><a href='6-1q.html'>야생화</a></h3>
-   <h3><a href='6-2q.html'>딸기축제</a></h3>
-  </center>
+    
+ <center><h3>･ﾟ✧ঌSteady໒*･ﾟ</h3>
+    <p><span>“Let's go steady” 소원과 꿈을 이루기 위한 여정은 계속된다!</span></p>
+    <video width='1480' height='680' 
+        source src=imgs/main1.mp4 muted autoplay playsinline loop type='video/mp4'><br>
+    </center>
+   
+   
 </body>
 </html>
