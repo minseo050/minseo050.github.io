@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+            clear: both;
+        }
+li {
+            list-style-type: none;
+        }
+        #logo {
+            float: left;
+            margin-left: 40px;
+        }
+        #menu {
+            float: right;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-right: 40px;
+        }
+        #menu li {
+            display: inline;
+        }
+        .item {
+            margin: 0 20px 0 20px;
+            color: green;
+        }
+body {
+ 
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+  height: 80px;
+border-bottom: solid 1px #000000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  float: right;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-right: 40px;
+            
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-memory h1 {
+  font-size: 8rem;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  
+}
+
+.large-image {
+  width: 90%; 
+  /*width: 1500px;*/
+  height: 600px;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.caption {
+  margin-top: 30px;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.precious-memories h2 {
+  font-size: 3.5rem;
+  margin: 150px 0;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  justify-items: center;
+ /* padding-bottom: 50px;
+  padding-top: 30px;*/
+  padding: 50px 120px 50px 120px; 
+}
+
+.memory-item {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('img/t.png');
+}
+footer {
+            
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            background-color: #2c2a29;
+        }
+        #footer_box {
+            width: 1140px;
+            height: 150px;
+            margin: 0 auto;
+            /* border: solid 1px green; */
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 30px;
+            /* border: solid 1px red; */
+        }
+        #address {
+            float: right;
+            margin: 60px 30px 0 0;
+            color: white;
+            /* border: solid 1px red; */
+
+            
+        } 
+        a:link {
+            
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(0, 0, 0);
+        }
+        table {
+        width: 100%;
+        max-width: 1000px;
+        
+        margin: 0 auto;
+        margin-top: 60px;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+         }
+    table {
+            padding: 60px;
+            margin-bottom: 100px;
+    }
+   tr {
+        text-align: left;
+        margin-bottom: 100px;
+    }
+    th {
+        font-size: 20px;
+        padding: 5px;
+        
+    }
+    td {
+        font-size: 14px;
+        padding: 5px;
+        font-family: 맑은고딕;
+        
+    }
+    img {
+        margin-right: 8px;
+    }
+        
+ #aa {
+        padding-bottom: 70px;
+    }
+
+    </style>
+</head>
+<body bgcolor="#FDF7E6">
+    <header>
+      <nav>
+        <div id="logo">
+            <a href='index.html'><img src="iimg/logo.png" ></a>
+            </div> 
+        <ul class="nav-list">
+         
+          <li><a href="episode1.html">Episode 1</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode2.html">Episode 2</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode3.html">Episode 3</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode4.html">Episode 4</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode5.html">Episode 5</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section class="main-memory">
+        <table>
+            <tr>
+                <th>챱챱챱! 즐거운 떡 만들기</th>
+                <th>게임을 해서 신난!</th>
+            </tr>
+            <tr>
+                <td><img src='iimg/z1.png'></td>
+                <td><img src='iimg/z2.png'></td>
+            </tr>
+        <tr>
+            <td id='aa'>어린이집을 다니던 시절에는 다양한 체험활동을 한 게 기억에 많이 남는다. </td>
+            <td id='aa'>게임을 하는 시간을 싫어했지만 막상 하면 아주 즐겁게 했다.</td>
+        </tr>
+        <tr>
+            <th>삼남매의 인생 첫 지하철</th>
+            <th>우리집의 역사</th>
+        </tr>
+        <tr>
+            <td><img src='iimg/z3.png'></td>
+            <td><img src='iimg/z6.jpg'></td>
+        </tr>
+    <tr>
+        <td id='aa'>지금은 맨날 타는 지하철이지만, 이 떄는 인생 처음 지하철을 타서 <br>매우 신나고 똘망똘망한 눈을 가지고 있다. </td>
+        <td id='aa'>우리집은 애기 시절 때 왕족발을 들고 사진을 찍는 재밌는 역사가 있다.</td>
+    </tr>
+    <tr>
+        <th>엄마아빠 행복하세요♥</th>
+        <th>불쌍한 동생</th>
+    </tr>
+    <tr>
+        <td><img src='iimg/z4.jpg'></td>
+        <td><img src='iimg/z5.png'></td>
+    </tr>
+    <tr>
+    <td id='aa'>엄마아빠께 나중에 효도하겠다며 말하는 것 보다<br>
+    지금 당장 화목하게 대화하고 소소한 선물을 주며 행복함을 선물하는 것을 잊지말자! </td>
+    <td id='aa'>어린이 시절 동생은 나와 언니의 장난감이였다..불쌍한 막내..</td>
+    </tr>
+    </table>
+      </section>
+  
+     
+      </section>
+    </main>
+    <div class="clear"></div> <!--float 속성 해제-->
+    <footer>
+        <div id="footer_box">
+            <div id="footer_logo">
+                <img src="iimg/logo1.png">
+            </div>
+            <ul id="address">
+                <li>TEL:010-3065-8945</li>
+                <li>Email : kms050721@naver.com</li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+  </html>

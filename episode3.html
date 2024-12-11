@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+            clear: both;
+        }
+li {
+            list-style-type: none;
+        }
+        #logo {
+            float: left;
+            margin-left: 40px;
+        }
+        #menu {
+            float: right;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-right: 40px;
+        }
+        #menu li {
+            display: inline;
+        }
+        .item {
+            margin: 0 20px 0 20px;
+            color: green;
+        }
+body {
+ 
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+  height: 80px;
+border-bottom: solid 1px #000000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  float: right;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-right: 40px;
+            
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-memory h1 {
+  font-size: 8rem;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  
+}
+
+.large-image {
+  width: 90%; 
+  /*width: 1500px;*/
+  height: 600px;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.caption {
+  margin-top: 30px;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.precious-memories h2 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  float: left;
+  border-bottom: solid 1px #000000;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  justify-items: center;
+ /* padding-bottom: 50px;
+  padding-top: 30px;*/
+  padding: 10px 300px 10px 300px; 
+}
+
+.memory-item {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t1.jpg');
+}
+.memory-item1 {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t2.jpg');
+}
+.memory-item2 {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t3.jpg');
+}
+.memory-item3 {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t4.jpg');
+}
+.memory-item4 {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t6.jpg');
+}
+.memory-item5 {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/t7.jpg');
+}
+.memory-item6 {
+  width: 1250px;
+  height: 600px;
+  background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  background-image: url('iimg/time.jpg');
+}
+h2 {
+  padding-top: 60px;
+}
+
+footer {
+            
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            background-color: #2c2a29;
+        }
+        #footer_box {
+            width: 1140px;
+            height: 150px;
+            margin: 0 auto;
+            /* border: solid 1px green; */
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 30px;
+            /* border: solid 1px red; */
+        }
+        #address {
+            float: right;
+            margin: 60px 30px 0 0;
+            color: white;
+            /* border: solid 1px red; */
+
+            
+        } 
+        a:link {
+            
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body bgcolor="#FDF7E6">
+    <header>
+      <nav>
+        <div id="logo">
+            <a href='index.html'><img src="iimg/logo.png" ></a>
+            </div> 
+        <ul class="nav-list">
+         
+          <li><a href="episode1.html">Episode 1</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode2.html">Episode 2</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode3.html">Episode 3</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode4.html">Episode 4</a></li>
+          <li>ㅣ</li>
+          <li><a href="episode5.html">Episode 5</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+  
+      <section >
+        <h2>엄마와 아빠가 결혼하고 언니가 태어났어요</h2>
+        <div class="memory-grid">
+          <div class="memory-item"></div>
+          <div class="memory-item1"></div>
+        </div>
+        
+        <h2>그 다음으로는 1년 뒤 내가 태어나고</h2>
+        <div class="memory-grid">
+            <div class="memory-item2"></div>
+            <div class="memory-item3"></div>
+          </div>
+          
+          <h2>3년 뒤 동생이 태어났어요!</h2>
+          <div class="memory-grid">
+           <div class="memory-item4"></div>
+           <div class="memory-item5"></div>
+          </div> 
+          
+          <h2>이 시간들은 엄마가 절대 잊고 싶지 않다고 한 시간들</h2>
+        <div class="memory-grid">
+            <div class="memory-item6"></div>
+    
+          </div>
+
+      </section>
+    </main>
+    <div class="clear"></div> <!--float 속성 해제-->
+    <footer>
+        <div id="footer_box">
+            <div id="footer_logo">
+                <img src="iimg/logo1.png">
+            </div>
+            <ul id="address">
+                <li>TEL:010-3065-8945</li>
+                <li>Email : kms050721@naver.com</li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+  </html>
